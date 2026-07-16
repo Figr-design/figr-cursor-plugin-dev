@@ -12,14 +12,15 @@ Full reference: [mcp-guide.md](mcp-guide.md)
 ## Quick path
 
 1. `set_project` with the Figr URL (`?boardNode=` if they named a node).
-2. `tree` / `ls /` — explore the live project tree.
+2. `tree` / `ls /` - explore the live project tree.
 3. If `selectedBoardNode` is set, start from its `folderPrefix` / `filePath`.
 4. Prefer `get_design_context` on screens you will build (code + design chat).
 5. `grep` scoped to the folder you care about; use `/queries` for rationale; use `/design-system` if present.
-6. Port into the user's stack — match tokens/layout/behavior; wire real data; do not dump a disconnected copy.
+6. Port into the user's stack - match tokens/layout/behavior; wire real data; do not dump a disconnected copy.
 
 ## Rules
 
 - MCP is read-only.
 - Prefer VFS paths from `ls` / `tree` (e.g. `/login-prototype`), never `/deepagent/...` storage prefixes.
 - `grep` patterns are JS RegExp (e.g. `Login|Button`).
+- Deep-agent source `read` returns **raw** paginated `content` (no `N→`) plus `downloadUrl` on live HEAD. When you need the file **as-is** on disk: `curl -L "$downloadUrl" -o <path>` (full file; follow redirects). Do not rewrite from `content`. `downloadUrl` is null for query snapshots / non-source paths.

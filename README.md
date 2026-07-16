@@ -1,4 +1,4 @@
-# Figr — Cursor marketplace (dev)
+# Figr - Cursor marketplace (dev)
 
 Dev/staging variant of the Figr Cursor plugin. MCP → `https://dev-mcp.figr.design/mcp`.
 
