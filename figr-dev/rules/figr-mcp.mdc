@@ -1,0 +1,15 @@
+---
+description: Figr MCP — load canvases and implement UI from Figr
+alwaysApply: false
+---
+
+# Figr MCP
+
+When the user shares a Figr URL or asks to implement from Figr:
+
+1. Use the **figr** MCP server (`set_project` first).
+2. Prefer `get_design_context` over bare `read` for screens you implement.
+3. Scope `grep` to the folder you care about. Use VFS paths from `ls`, not `/deepagent/` prefixes.
+4. Port into this repo’s stack; match tokens and structure; wire real data.
+
+Invoke the `figr-mcp` skill for the full workflow.

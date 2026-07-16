@@ -1,0 +1,26 @@
+{
+  "name": "figr-dev",
+  "owner": {
+    "name": "Figr",
+    "email": "hello@figr.design"
+  },
+  "metadata": {
+    "description": "Figr Cursor marketplace (dev/staging MCP) — for Figr engineers testing against dev-mcp.figr.design.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "figr-dev",
+      "source": "./figr-dev",
+      "description": "Figr MCP (dev) — points at https://dev-mcp.figr.design/mcp",
+      "version": "1.0.0",
+      "author": {
+        "name": "Figr",
+        "url": "https://figr.design"
+      },
+      "homepage": "https://docs.figr.design/docs/design-intelligence/figr-mcp",
+      "category": "development",
+      "keywords": ["figr", "mcp", "design", "ui", "dev"]
+    }
+  ]
+}
