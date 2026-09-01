@@ -1,15 +1,15 @@
 ---
-description: Figr MCP - load canvases and implement UI from Figr
+description: Figr MCP - write in Figr or port UI from a Figr canvas
 alwaysApply: false
 ---
 
 # Figr MCP
 
-When the user shares a Figr URL or asks to implement from Figr:
+When the user shares a Figr URL, asks to build or edit in Figr, or implement from Figr:
 
-1. Use the **figr** MCP server (`set_project` first).
-2. Prefer `get_design_context` over bare `read` for screens you implement.
-3. Scope `grep` to the folder you care about. Use VFS paths from `ls`, not `/deepagent/` prefixes.
-4. Port into this repo’s stack; match tokens and structure; wire real data.
+1. Use the **figr** MCP server. `set_project` / `create_project`, or `set_design_system` / `create_design_system`.
+2. Write in Figr: `write_file` / `edit_file` / `shell`. `figr build <app>` stamps the canvas preview; `figr publish` publishes a design system (own command). `finish_turn` last.
+3. Port into this repo: prefer `get_design_context`; VFS paths from `ls`, never `/deepagent/`.
+4. Full contract: `coding-agents/mcp-guide.md` (or the `figr-mcp` skill's `mcp-guide.md`).
 
-Invoke the `figr-mcp` skill for the full workflow.
+Do not skip `figr build` after writing a prototype. Do not write `/design-system/` from a project session.

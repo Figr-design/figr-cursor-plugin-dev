@@ -1,8 +1,8 @@
 {
   "name": "figr-dev",
   "displayName": "Figr (dev)",
-  "version": "1.0.0",
-  "description": "Figr MCP (dev) - read design canvases from staging via https://dev-mcp.figr.design/mcp",
+  "version": "1.1.0",
+  "description": "Figr MCP (dev) — write into Figr or port UI. https://dev-mcp.figr.design/mcp",
   "author": {
     "name": "Figr",
     "email": "hello@figr.design"
