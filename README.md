@@ -1,25 +1,22 @@
-# Figr - Cursor marketplace (dev)
+# Figr for Cursor (dev)
 
-Dev/staging variant of the Figr Cursor plugin. MCP → `https://dev-mcp.figr.design/mcp`.
+Staging plugin. Same product as [Figr for Cursor](https://github.com/Figr-design/figr-cursor-plugin), pointed at `https://dev-mcp.figr.design/mcp`.
 
-**Live repo:** https://github.com/Figr-design/figr-cursor-plugin-dev (public)
+Figr is an AI product design tool that takes teams from idea to shippable design through exploration, collaboration and iteration — grounded in their existing product and design system.
 
-## Install (local)
+Use this for staging, not production.
+
+## Install
 
 ```bash
 git clone https://github.com/Figr-design/figr-cursor-plugin-dev.git
 ln -s "$PWD/figr-cursor-plugin-dev/figr-dev" ~/.cursor/plugins/local/figr-dev
 ```
 
-Reload Cursor. Use this for staging FE (`dev-mcp`), not production.
+Reload Cursor, then authenticate Figr when prompted.
 
-## Layout
+## Support
 
-```text
-.cursor-plugin/marketplace.json   # marketplace name: figr-dev
-figr-dev/                         # plugin name: figr-dev
-  .cursor-plugin/plugin.json
-  mcp.json                        # → https://dev-mcp.figr.design/mcp
-  rules/figr-mcp.mdc
-  skills/figr-mcp/
-```
+- Docs: https://docs.figr.design/docs/design-intelligence/figr-mcp
+- Email: hi@figr.design
+- Privacy: https://www.figr.design/privacy-policy

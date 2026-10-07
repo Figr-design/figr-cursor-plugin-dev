@@ -2,7 +2,7 @@
   "name": "figr-dev",
   "owner": {
     "name": "Figr",
-    "email": "hello@figr.design"
+    "email": "hi@figr.design"
   },
   "metadata": {
     "description": "Figr Cursor marketplace (dev/staging MCP) — write into Figr or port UI. Points at dev-mcp.figr.design.",
